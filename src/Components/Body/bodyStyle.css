@@ -18,12 +18,19 @@
     .sec-1-right-text-wrapper{
         display: flex;
         flex-direction: column;
-        
         align-items: center;
     }
-    /* .sec-1-right-text-wrapper > span {
-        word-wrap: break-word;
-    } */
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section2-right {
+
+        margin-top: 20px;
+    }
+    .img-wrapper {
+        width: 80%;
+    }
    
 }
 
@@ -36,6 +43,13 @@
     }
     .section-container {
         width: 80%;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section2-right {
+        margin-top: 20px;
     }
 }
 
@@ -53,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .section1 {
@@ -134,19 +148,25 @@ u:hover {
     height: 70%;
 }
 
-Section2 
+/* Section2 Styling starts here */
 
 .section2 {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .section2-left {
-    background-color: cornflowerblue;
-    width: 48%;
+    /* background-color: cornflowerblue; */
+    /* width: 48%; */
     line-height: 1.8;
+
+}
+
+.sec2-left-text {
+    /* background-color: red; */
+    width: 95%;
 }
 
 hr {
@@ -167,10 +187,25 @@ hr {
 }
 
 .section2-right {
-    background-color: hotpink;
-    width: 48%;
+    /* background-color: hotpink; */
+    /* width: 48%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-wrapper {
+    width: 400px;
+    background-color: orange;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#my_photo {
+    width: 389px;
+    height: 389px;
+    border-radius: 50%;
 }
