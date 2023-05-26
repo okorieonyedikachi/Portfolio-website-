@@ -6,6 +6,7 @@ import Mail from '../../assets/mail.png'
 import Medium from '../../assets/medium.png'
 import Myphoto from '../../assets/myphoto.jpg'
 
+
 function Body() {
     return (
         <div className="body-container">
@@ -81,7 +82,9 @@ function Body() {
                     </div>
                 </div>
                 {/* Section3 Starts here */}
-                <div className='section3'>nvbejunsiks</div>
+                <div className='section3'>
+                    <h2><u>My Skills</u></h2>
+                </div>
             </div>
             
         </div>
