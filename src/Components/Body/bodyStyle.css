@@ -209,3 +209,8 @@ hr {
     height: 389px;
     border-radius: 50%;
 }
+
+.section3 {
+    width: 100%;
+    background-color: aliceblue;
+}

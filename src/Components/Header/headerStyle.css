@@ -52,5 +52,21 @@ header {
 }
 
 .nav-list > li {
-    padding-right: 1em;
+    margin-right: 1em;
+    position: relative;
 }
+
+.nav-list > li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: orange; /* Change the color to your preference */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-list > li:hover::after {
+    width: 100%;
+  }
