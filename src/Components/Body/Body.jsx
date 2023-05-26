@@ -22,7 +22,7 @@ function Body() {
                         <div className='sec-1-right-text-wrapper'>
                             <h1>
                                 Hello, &nbsp;
-                                <u>I'm Dannie</u>
+                                <u>Dannie here</u>
                             </h1>
                             <span>
                                 a mobile-concerned frontend web developer <br/>with an undying passion for css
@@ -80,6 +80,7 @@ function Body() {
                         </div>
                     </div>
                 </div>
+                {/* Section3 Starts here */}
                 <div className='section3'>nvbejunsiks</div>
             </div>
             
