@@ -8,8 +8,8 @@
     header {
         justify-content: space-between;
     }
-    .nav-list{
-        display: none !important ;
+    /* .nav-list{
+        flex-flow: column nowrap;
     }
     .hamburger {
        display: block;
@@ -17,12 +17,13 @@
     }
     .hamburger-react {
         display: flex;
-      }
+      } */
     
 }
 
 .header-container {
-    background-color: rgba(255, 255, 255, 0.86);
+    /* background-color: rgba(255, 255, 255, 0.86); */
+    background-color: aqua;
     backdrop-filter: blur(5px);
     z-index: 100;
     width: 100%;
@@ -44,31 +45,50 @@ header {
 }
 
 .header-left {
-    /* background-color: beige; */
+    background-color: beige;
     display: flex;
     align-items: center;
 }
 
 .header-right {
-    /* background-color: aqua; */
+    background-color: blue;
     display: flex;
     align-items: center;
 }
 
-.nav-menu {
-    display: flex;
-    background-color: red;
-    align-items: center;
-    /* flex-direction: ${({isOpen}) => (isOpen ? 'column' : 'row')}; */
-
-}
-
-.nav-list {
+.Ul {
     display: flex; 
     list-style: none;
 }
 
-.nav-list > li {
+.Ul > li {
+    margin-right: 2em;
+}
+
+.Navigation {
+    display: flex;
+}
+
+.MobileNav {
+    display: none;
+}
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    .MobileNav {
+        display: flex;
+        align-items: center;
+        background-color: grey;
+    }
+    .Ul {
+        flex-flow: column nowrap;
+    }
+
+    .Navigation {
+        display: none;
+    }
+}
+
+
+/* .nav-list > li {
     margin-right: 1em;
     position: relative;
 }
@@ -81,13 +101,30 @@ header {
     width: 0;
     height: 2px;
     background-color: orange; /* Change the color to your preference */
-    transition: width 0.3s ease-in-out;
-  }
+    /* transition: width 0.3s ease-in-out;
+  } */
   
-  .nav-list > li:hover::after {
+  /* .nav-list > li:hover::after {
     width: 100%;
-  }
+  } */ 
 
-  .hamburger {
-    display: none;
-  }
+  
+
+  /* .nav-menu {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .header-right {
+    background-color: aqua; 
+    display: flex;
+    align-items: center;
+}  */
+
+/* .nav-menu {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    /* flex-direction: ${({isOpen}) => (isOpen ? 'column' : 'row')}; */
+
