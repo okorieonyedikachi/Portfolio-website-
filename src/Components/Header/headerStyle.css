@@ -21,12 +21,19 @@
     
 }
 
+.header-wrapper {
+    width: 100vw;
+    /* height: 100vh; */
+    top: 0;
+    position: sticky;
+}
+
 .header-container {
     /* background-color: rgba(255, 255, 255, 0.86); */
     background-color: aqua;
     backdrop-filter: blur(5px);
     z-index: 100;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     display: flex;
     align-items: center;
@@ -52,8 +59,8 @@ header {
 
 .header-right {
     background-color: blue;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 .Ul {
@@ -86,6 +93,23 @@ header {
         display: none;
     }
 }
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.active {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 /* .nav-list > li {

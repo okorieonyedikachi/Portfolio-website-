@@ -1,0 +1,8 @@
+.modal {
+    width: 0;
+    height: 100vh;
+    background-color: cadetblue;
+    position: fixed;
+    /* overflow-x: hidden; */
+    padding-top: 60px;
+}
