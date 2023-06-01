@@ -12,7 +12,6 @@ function Header() {
     // }
 
     return (
-        <div className='header-wrapper'>
             <div className="header-container">
                 <header>
                     <div className='header-left'>
@@ -26,8 +25,8 @@ function Header() {
                     
                 </header>
             </div>
-            <div className=' active'><p>jnvekv</p></div>
-        </div>
+         
+        
         
     )
 }
