@@ -5,12 +5,6 @@ import Navigation from './Navigation';
 
 function Header() {
 
-    // const  {isOpen, setIsOpen} = useState(false);
-    
-    // const toggleMenu = () => {
-    //     setIsOpen(!isOpen)
-    // }
-
     return (
             <div className="header-container">
                 <header>

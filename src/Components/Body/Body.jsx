@@ -26,7 +26,7 @@ function Body() {
                                 <u>Dannie here</u>
                             </h1>
                             <span>
-                                a mobile-concerned frontend web developer <br/>with an undying passion for css
+                                <p>a mobile-concerned frontend web developer with an undying passion for css</p>
                             </span>
                         </div>
                         <div className='logo-wrapper'>

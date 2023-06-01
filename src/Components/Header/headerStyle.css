@@ -8,25 +8,14 @@
     header {
         justify-content: space-between;
     }
-    /* .nav-list{
-        flex-flow: column nowrap;
-    }
-    .hamburger {
-       display: block;
-       margin-top: 10px;
-    }
-    .hamburger-react {
-        display: flex;
-      } */
     
 }
 
 
 
 .header-container {
-    /* background-color: rgba(255, 255, 255, 0.86); */
-    background-color: aqua;
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.876);
+    backdrop-filter: blur(10px);
     z-index: 100;
     width: 100vw;
     height: 10%;
@@ -43,25 +32,35 @@ header {
     margin: 0px 15%;
     /* background-color: red; */
     justify-content: space-between;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .header-left {
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     align-items: center;
 }
 
-.header-right {
-    background-color: blue;
-    /* display: flex;
-    align-items: center; */
-}
 
 .Ul {
     display: flex; 
     list-style: none;
 }
+
+.Ul  li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: orange; /* Change the color to your preference */
+    transition: width 0.3s ease-in-out;
+}
+
+.Ul > li:hover::after {
+    width: 100%;
+  }
 
 .Ul > li {
     margin-right: 2em;
@@ -78,10 +77,16 @@ header {
     .MobileNav {
         display: flex;
         align-items: center;
-        background-color: grey;
+        /* background-color: grey; */
     }
     .Ul {
         flex-flow: column nowrap;
+        padding-left: 20px;
+    }
+
+    .Ul li {
+        padding-bottom: 30px;
+        font-size: 18px;
     }
 
     .Navigation {
@@ -89,17 +94,14 @@ header {
     }
 }
 
-/* .modal {
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
-} */
 button {
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background-color: inherit;
 }
 
 button p {
