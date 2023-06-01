@@ -1,32 +1,34 @@
-import Hamburger from 'hamburger-react'
-import '../headerStyle.css'
+// import Hamburger from 'hamburger-react'
+import "../headerStyle.css";
+import { useState } from "react";
 
-// import Navlist from '../Navlist'
-
-// import { useState } from 'react'
-import Modal from './Modal'
+import Modal from "./Modal";
+import Hamburger from "../../Icons/Hamburger";
 
 
 const MobileNav = () => {
-  // const handleToggle =  {
-  //   openNav()
-  // }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  
 
   return (
     <div>
-        <div className='MobileNav'>
-          {/* <Navlist /> */}
-        
-          <Hamburger 
-            // onToggle={handleToggle}
-          />
-        </div>
-        <Modal 
-          
-        />
-    </div>
-      
-  )
-}
+      <div className="MobileNav">
+        <button onClick={toggleMenu}>
+          {isMenuOpen ? <p>X</p> : <Hamburger />}
+        </button>
+      </div>
 
-export default MobileNav
+      {isMenuOpen ? <Modal  
+      setIsMenuOpen={setIsMenuOpen}
+      className={'visible'}
+      
+      /> : ""}
+    </div>
+  );
+};
+
+export default MobileNav;

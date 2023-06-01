@@ -1,23 +1,34 @@
 import './Modal.css'
+import PropTypes from "prop-types";
 
 import Navlist from '../Navlist'
-import { useState } from 'react';
 
 
-const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const openNav = () => {
-    setIsOpen(true);
-  };
+const Modal = ({className,setIsMenuOpen}) => {
+  
+
+  
+
 
   return (
-    <div className='modal'
-    style={{ width: isOpen ? "250px" : "0" }}
+    <div className='modal-list'
+      onClick={()=> setIsMenuOpen(false)}
     >
-      <Navlist />
+      <div className='modal-div'>
+         <div className={`modal ${className}`}>
+      
+        <Navlist />
+      </div>
+      
+      </div>
+     
     </div>
   )
 }
-
+Modal.propTypes = {
+ 
+  className: PropTypes.string,
+  setIsMenuOpen: PropTypes.bool
+};
 export default Modal
